@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+#container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-shadow: -1px -1px 0 #e79a9a, 1px -1px 0 #fff, -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+h4 {
+  /* text-shadow: -1px -1px 0 #e79a9a, 1px -1px 0 #fff, -1px 1px 0 #fff,
+    1px 1px 0 #fff; */
+  text-align: center;
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+  color: #fff;
+}
+
+div {
+  margin-top: 1rem;
+}
+
+button {
+  padding: 0.3rem;
+  font-size: 0.8rem;
+  font-weight: bolder;
+}
+input {
+  padding: 0.3rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  outline: none;
+}
+#input1 {
+  border-left: none;
+  border-radius: 0px 5px 5px 0px;
+  padding-left: 0;
+}
+span {
+  background-color: aliceblue;
+  padding: 0.3rem;
+  border: 1px solid black;
+  border-radius: 5px 0 0 5px;
+  margin-right: -5px;
+  border-right: none;
+  font-size: 0.9rem;
+  margin-left: 20px;
+}
+#clickBtn {
+  margin-top: 1rem;
+  padding: 0.4rem 3.5rem;
+  font-weight: bolder;
+  font-size: 1rem;
+}
+
+.toast-msg {
+  position: fixed;
+  width: 10rem;
+  top: 2rem;
+  right: 2rem;
+  background-color: rgb(5, 97, 177);
+  padding: 1rem;
+  z-index: 99;
+  border-radius: 5px;
+  border: 1px solid floralwhite;
+  color: #fff;
+}
+
+.toast-msg-in {
+  animation: toast-msg-in 0.5s ease-in;
+}
+.toast-msg-out {
+  animation: toast-msg-out 0.5s ease-in;
+}
+
+@keyframes toast-msg-in {
+  from {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes toast-msg-out {
+  from {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+}
